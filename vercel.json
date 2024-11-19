@@ -20,6 +20,10 @@
     ],
     "routes": [
       {
+        "src": "/(.*).(js|css)",
+        "dest": "/$1.$2"
+      },
+      {
         "src": "/(.*)",
         "dest": "/index.html"
       },
