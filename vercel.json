@@ -20,16 +20,12 @@
     ],
     "routes": [
       {
-        "src": "/(.*).(js|css)",
-        "dest": "/$1.$2"
+        "src": "/api/(.*)",
+        "dest": "/app.py"  
       },
       {
         "src": "/(.*)",
-        "dest": "/index.html"
-      },
-      {
-        "src": "/api/(.*)",
-        "dest": "/app.py"
+        "dest": "/index.html" 
       }
     ]
   }
