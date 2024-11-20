@@ -138,3 +138,69 @@ button:active {
 #resultImage:hover {
     transform: scale(1.05);
 }
+
+/* Media Queries for Responsiveness */
+
+/* For smaller screens (mobile devices) */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        gap: 12px;
+    }
+
+    input[type="file"],
+    input[type="number"],
+    select {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 10px 18px;
+        font-size: 1rem;
+    }
+
+    #result {
+        margin-top: 15px;
+    }
+}
+
+/* For very small screens (smaller mobile devices) */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        max-width: 95%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    input[type="file"],
+    input[type="number"],
+    select {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 0.95rem;
+    }
+
+    #resultImage {
+        max-height: 400px;
+    }
+}
