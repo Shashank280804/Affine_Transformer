@@ -1,3 +1,4 @@
+
 import os
 import json
 import cv2
@@ -21,6 +22,10 @@ app.config['PROCESSED_FOLDER'] = PROCESSED_FOLDER
 # Ensure that the upload and processed directories exist
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 os.makedirs(app.config['PROCESSED_FOLDER'], exist_ok=True)
+
+@app.route('/')
+def home():
+    return "Hello, world!" 
 
 @app.route('/upload', methods=['POST'])
 def upload_image():
